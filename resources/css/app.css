@@ -157,3 +157,17 @@
         @apply bg-background text-foreground;
     }
 }
+@font-face {
+  font-family: 'Gagalin';
+  src: url('/fonts/Gagalin-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-gagalin {
+  font-family: 'Gagalin', cursive;
+}
+.font-gagalin {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
