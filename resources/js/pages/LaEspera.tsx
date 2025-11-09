@@ -1,3 +1,5 @@
+import GalleryTrabajo from "@/components/GalleryTrabajo";
+import Gallery from "@/components/GalleryTrabajo";
 import HeaderNav from "@/components/Header/nav";
 import React from "react";
 import { useEffect, useState } from "react";
@@ -56,66 +58,20 @@ export default function LaEspera() {
                     </h3>
                 </div>
             </div>
-            <section className="max-w-7xl mx-auto p-7 mt-20 grid md:grid-cols-3 gap-6">
-                <img
-                src="/contenido/LaEspera/001.jpg.png"
-                loading="lazy"
-                alt="ESPERA"
-                className=" h-full w-full object-cover object-center "
-                />
-                <img
-                src="/contenido/LaEspera/002.jpg.png"
-                loading="lazy"
-                alt="ESPERA"
-                className=" h-full w-full object-cover object-center "
-                />
-                <img
-                src="/contenido/LaEspera/003.jpg.png"
-                loading="lazy"
-                alt="ESPERA"
-                className=" h-full w-full object-cover object-center "
-                />
-            </section>
-            <section className="max-w-7xl mx-auto p-7 mt-20 grid md:grid-cols-3 gap-6">
-                <img
-                src="/contenido/LaEspera/004.jpg.png"
-                loading="lazy"
-                alt="ESPERA"
-                className=" h-full w-full object-cover object-center "
-                />
-                <img
-                src="/contenido/LaEspera/005.jpg.png"
-                loading="lazy"
-                alt="ESPERA"
-                className=" h-full w-full object-cover object-center "
-                />
-                <img
-                src="/contenido/LaEspera/007.jpg.png"
-                loading="lazy"
-                alt="ESPERA"
-                className=" h-full w-full object-cover object-center "
-                />
-            </section>
-            <section className="max-w-7xl mx-auto p-7 mt-20 grid md:grid-cols-3 gap-6">
-                <img
-                src="/contenido/LaEspera/008.jpg.png"
-                loading="lazy"
-                alt="ESPERA"
-                className=" h-full w-full object-cover object-center "
-                />
-                <img
-                src="/contenido/LaEspera/009.jpg.png"
-                loading="lazy"
-                alt="ESPERA"
-                className=" h-full w-full object-cover object-center "
-                />
-                <img
-                src="/contenido/LaEspera/010.jpg.png"
-                loading="lazy"
-                alt="ESPERA"
-                className=" h-full w-full object-cover object-center "
-                />
-            </section>
+            <GalleryTrabajo
+                images={[
+                    "001.jpg.png",
+                    "002.jpg.png",
+                    "003.jpg.png",
+                    "004.jpg.png",
+                    "005.jpg.png",
+                    "007.jpg.png",
+                    "008.jpg.png",
+                    "009.jpg.png",
+                    "010.jpg.png",
+                ]}
+                basePath="/contenido/LaEspera"
+            />
         </>
     );
 }

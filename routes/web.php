@@ -21,6 +21,9 @@ Route::get('/con-trabajo', function () {
     return Inertia::render('conTrabajo');
 })->name('conTrabajo');
 
+Route::get('/sortilegios-muesley', function () {
+    return Inertia::render('SortilegiosMuesley');
+})->name('Sortilegios');
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

@@ -36,7 +36,7 @@ export default function HeaderNav() {
                                 <Link href={route('conTrabajo')} className="block px-4 py-2 hover:text-[#f9a875] text-gray-700">
                                 Con-trabajo
                                 </Link>
-                                <a href="/shortfilms/film3" className="block px-4 py-2 hover:text-[#f9a875] text-gray-700">
+                                <a href={route('Sortilegios')} className="block px-4 py-2 hover:text-[#f9a875] text-gray-700">
                                 Sortilegios Muesley
                                 </a>
                             </div>

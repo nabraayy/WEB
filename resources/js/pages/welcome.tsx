@@ -13,14 +13,9 @@ export default function Welcome() {
     return (
         
         <>
-            
-               
                     <Head title="LADELIKADA" />
                     <HeaderNav/>
-                    
                     <Work/>
-               
-            
         </>
     );
 }
