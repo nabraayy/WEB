@@ -27,7 +27,7 @@ export default function LaEspera() {
             </div>
 
 
-            <section className="max-w-7xl mx-auto px-6 pt-10 grid md:grid-cols-2 gap-8 items-center">
+           <section className="w-full px-6 pt-10 grid md:grid-cols-2 gap-8 items-center">
                 
                  <div>
                     <h2 className="text-3xl font-bold mb-4">La Espera</h2>

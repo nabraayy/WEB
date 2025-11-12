@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "../../css/app.css";
 import GalleryTrabajo from "@/components/GalleryTrabajo";
 import VideoCarousel from "@/components/Video";
+import PortfolioGrid from "@/components/Porfolio";
 
 
 export default function LaEspera() {
@@ -35,7 +36,7 @@ export default function LaEspera() {
             </div>
 
 
-            <section className="max-w-7xl mx-auto px-6 pt-10 grid md:grid-cols-2 gap-8 items-center">
+            <section className="w-full px-6 pt-10 grid md:grid-cols-2 gap-8 items-center">
                 
                  <div>
                     <h2 className="text-3xl font-bold mb-4">La Espera</h2>
@@ -54,17 +55,15 @@ export default function LaEspera() {
                     />
                 </div>
             </section>
-            <div className="relative w-full h-[500px] overflow-hidden">
-                <img
-                    src="/contenido/000.CON-TRABAJO/ARTESFINALES/001.jpg"
-                    alt="Portada"
-                    className="w-full h-full object-cover object-center transition-transform duration-200"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <h3 className="text-white text-5xl font-bold drop-shadow-lg">
-                        PROCESO CON-TRABAJO
-                    </h3>
-                </div>
+            <div className="relative py-10 text-center">
+            <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                <div className="w-full border-t border-gray-300"></div>
+            </div>
+            <div className="relative inline-block bg-white px-6">
+                <h4 className="text-2xl font-semibold tracking-wide text-gray-800">
+                PROCESO CON-TRABAJO
+                </h4>
+            </div>
             </div>
             <GalleryTrabajo
                 images={[
@@ -149,6 +148,9 @@ export default function LaEspera() {
                 ]}
                 basePath="/contenido/000.CON-TRABAJO/ANIMACIÓN"
             />
+
+            
+
                
           
         </>

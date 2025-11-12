@@ -10,7 +10,8 @@ export default function Gallery({ images, basePath = "" }: GalleryProps) {
 
   return (
     <>
-      <section className="max-w-7xl mx-auto p-7 mt-20 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[200px]">
+     <section className="w-full p-7 mt-20 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[200px]">
+
         {images.map((file, index) => {
           const imageSrc = basePath ? `${basePath}/${file}` : file;
           return (

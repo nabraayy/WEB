@@ -14,7 +14,8 @@ export default function VideoCarousel({ videos, basePath = "" }: VideoCarouselPr
   const videoSrc = basePath ? `${basePath}/${videos[currentIndex]}` : videos[currentIndex];
 
   return (
-    <section className="max-w-6xl mx-auto mt-20 mb-12 flex flex-col items-center relative">
+   <section className="w-full mt-20 mb-12 flex flex-col relative">
+
       
       {/* Contenedor principal con flechas externas */}
       <div className="w-full flex items-center justify-between">

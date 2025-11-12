@@ -3,10 +3,10 @@ import React from "react";
 export default function Work() {
   const ResponsiveImageGallery = () => {
   return (
-    <div className="bg-white dark:bg-gray-800 h-screen h-full py-6 sm:py-8 lg:py-12">
-      <div className="w-full">
+    <div className="bg-white dark:bg-gray-800 w-full py-6 sm:py-8 lg:py-12">
+        <div className="w-full">
         
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8 w-full">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
           <a
             href="#"
             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
@@ -153,7 +153,7 @@ export default function Work() {
 
 
   return (
-    <section className="max-w-7xl mx-auto p-7 mt-20">
+   <section className="w-full p-7 mt-20">
      
       <div className="mb-8">
         <video
@@ -164,7 +164,7 @@ export default function Work() {
           muted
         />
       </div>
-      <ResponsiveImageGallery />
+     
     </section>
   );
   
